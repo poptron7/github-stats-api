@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>GitHub Repo Stats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="app">
+        <div class="logo">
+            <div class="logo-icon">🐙</div>
+            <div class="logo-title">GitHub Repo Stats</div>
+            <div class="logo-sub">Check repository statistics in real-time</div>
+        </div>
+
+        <form class="search-box" id="search-form">
+            <input
+                id="repo-input"
+                class="search-input"
+                type="text"
+                placeholder="owner/repo or paste GitHub URL"
+                autocomplete="off"
+            />
+            <button type="submit" class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span>Search</span>
+            </button>
+        </form>
+
+        <div class="hint">Enter a GitHub repository to view its statistics</div>
+        <div class="content" id="content">
+            <div class="empty-state">No repository selected yet.</div>
+        </div>
+
+        <div class="error" id="error"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
